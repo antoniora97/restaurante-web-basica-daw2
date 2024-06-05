@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página sencilla</title>
+    <script src="https://kit.fontawesome.com/bd88dbef4e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <i class="fas fa-hamburger"></i>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Galería</a>
+            <a href="reserve.html" target="_self" id="active">Reserva</a>
+        </nav>
+        <section id="form">
+            <form>
+                <p>Make your reservation</p>
+                <div>
+                    <label for="person-email">Email</label>
+                    <input type="email" placeholder="example@gmail.com" id="user-email" required>
+                </div>
+                <div>
+                    <label for="eaters">Personas</label>
+                    <input type="number" min="1" name="eaters" id="eaters" required>
+                </div>
+                <div>
+                    <label for="date">Fecha</label>
+                    <input type="date" name="reservation-date" id="reservation-date" required>
+                </div>
+                <div>
+                    <label for="reservation-hour">Hora</label>
+                    <input type="time" name="reservation-hour" id="reservation-hour" required>
+                </div>
+                <input type="submit" value="Enviar" id="submit">
+            </form>
+        </section>
+        <footer>
+            <p>F O O T E R</p>
+        </footer>
+    </main>
+</body>
+</html>
